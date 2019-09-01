@@ -1,0 +1,86 @@
+html {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("pianobase.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.piano {
+    display: flex;
+    position: relative;
+    margin-left: 4px;
+}
+
+.white-key {
+    width: 95px;
+    height: 200px;
+    background-color: #fff;
+    border: 4px solid black;
+    border-radius: 0 0 6px 6px;
+    margin-left: 0px;
+    outline: none;
+    cursor: pointer;
+    text-align-last: center;
+    padding-top: 130px;
+    font-size: 20px;
+}
+
+.white-key.active {
+    background-color: #c0c0c0;
+
+}
+
+.black-key {
+    position: absolute;
+    width: 60px;
+    height: 120px;
+    background-image: linear-gradient(#000000, #303030);
+    border: 3px solid black;
+    border-radius: 0 0 2px 2px;
+    outline: none;
+    cursor: pointer;
+    padding-top: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.black-key.active {
+    background-image: linear-gradient(#000000, #101010);
+}
+ 
+.Db4-key {
+    left: 60px;
+}
+
+.Eb4-key {
+    left: 160px;
+}
+
+.Gb4-key {
+    left: 350px;
+}
+
+.Ab4-key {
+    left: 445px;
+}
+
+.Bb4-key {
+    left: 540px;
+}
+
+.Db5-key {
+    left: 730px;
+}
+
+.Eb5-key { 
+    left: 825px;
+}
